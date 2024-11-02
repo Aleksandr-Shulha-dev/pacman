@@ -1,0 +1,51 @@
+{
+  "name": "packman",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "prettify": "prettier --write \"**/*.{ts,tsx,json,md,scss,html}\"",
+    "lint:prettify": "prettier --check \"**/*.{ts,tsx,json,md,scss,html}\"",
+    "lint:js": "npx eslint \"src/**/*.{ts,tsx}\"",
+    "lint:type": "npx tsc --noEmit",
+    "lint:fix": "npm run prettify && npx eslint --fix \"src/**/*.{ts,tsx}\"",
+    "lint": "npm run lint:prettify && npm run lint:type && npm run lint:js"
+  },
+  "dependencies": {
+    "@types/node": "^22.8.5",
+    "howler": "^2.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.80.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/howler": "^2.2.12",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/webpack-env": "^1.18.5",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "globals": "^15.11.0",
+    "postcss": "^8.4.47",
+    "prettier": "3.3.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.11.0",
+    "vite": "^5.4.10"
+  }
+}
